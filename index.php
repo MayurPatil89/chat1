@@ -130,11 +130,12 @@ function postApi($action,$profileID,$AccountID)
 
 // Process only when method is POST
 if($method == 'POST'){
-
+	echo "test";
 	
 	$requestBody = file_get_contents('php://input');
 	$domain = "http://agreement.naaptol.com/";
 	$json = json_decode($requestBody);
+	echo $json;exit;
 
 	$profileID = "22319";
 	$AccountID = "32707";
