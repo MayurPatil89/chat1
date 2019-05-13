@@ -134,13 +134,13 @@ function postApi($action,$profileID,$AccountID)
 if($method == 'POST'){
 	echo "test";
 	
-	$requestBody = file_get_contents('php://input');
+	 $requestBody = file_get_contents('php://input');
 	echo "test1";
 	echo $domain = "https://botapis.herokuapp.com/";
 	
 	$json = json_decode($requestBody);
 	
-	echo $json;
+	print_r($json);
 
 	$profileID = "22319";
 	$AccountID = "32707";
