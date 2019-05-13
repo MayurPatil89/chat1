@@ -6,7 +6,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 function postApi($action,$profileID,$AccountID)
 {
  
-	$domain = "http://agreement.naaptol.com/webchatdemo/chatappapi.php";
+	$domain = "https://botapis.herokuapp.com/";
  
 	if ($action == "balance" && isset($AccountID) && isset($profileID)) {
 		$plain = "balance|".$profileID."|" ."$AccountID";
