@@ -135,9 +135,12 @@ if($method == 'POST'){
 	echo "test";
 	
 	$requestBody = file_get_contents('php://input');
-	$domain = "http://agreement.naaptol.com/";
+	echo "test1";
+	echo $domain = "https://botapis.herokuapp.com/";
+	
 	$json = json_decode($requestBody);
-	echo $json;exit;
+	
+	echo $json;
 
 	$profileID = "22319";
 	$AccountID = "32707";
