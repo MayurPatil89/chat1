@@ -96,6 +96,8 @@ function postApi($action,$profileID,$AccountID)
 		$request = encrypts($plain);
 		$post = strtr($request, '+/=', '-_,' );
 		$curlURL = $domain."?data=".$post;
+		return "hello version";
+		exit;
 	}	
 	
 	
